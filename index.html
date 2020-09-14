@@ -1,12 +1,27 @@
 <html>
   <head>
     <title>Where?</title>
+    <link type="text/css" rel="stylesheet" href="locateCar.css"/>
+    <link type="text/css" rel="stylesheet" href="locateCarAndroid.css"/>
   </head>
   <body>
     <div id="navbar">
       <button id="park" onClick="SetParkingLocation()">Park</button>
-      Dude
-      <button id="retrieve" onClick="getParkingLocation()"></button>
+        Locate Car
+      <button id="retrieve" onClick="getParkingLocation()">Locate</button>
+    </div>
+    <div id="container">
+        <div id="instructions">
+          <p>Click Park button to set your parking location</p>
+          <p>Click the Locate button to get your parking location</p>
+          <p style="text-align: center">
+            <button id="gotIt" onClick="setCss('instructions', 'display', 'none')">
+                Got It
+            </button>
+          </p>
+        </div>
+        <div id = "map"></div>
+        <div id="directions"></div>
     </div>
   </body>
 </html>
